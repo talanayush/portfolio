@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HBD</title>
+</head>
+<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> -->
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;1,300;1,400&family=Tourney:ital,wght@1,300&display=swap"
+    rel="stylesheet">
+
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                <h1>Daru</h1>
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about_me">About Me</a></li>
+                    <li><a href="#who_am_i">Who AM I?</a></li>
+                    <li><a href="#contact_me">Contact ME!</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="section1">
+        <div class="sec1">
+            <h2 class="">Hey! my name is</h2>
+            <h1 class="name">DARU204</h1>
+            <br>
+            <h1>WELCOME TO MY</h1>
+            <span id="element"></span>
+            <span></span>
+
+        </div>
+
+
+    </div>
+    <div class="section2" id="about_me">
+        <div class="s2p2">
+            <img src="daru-modified.png" alt="">
+        </div>
+        <div class="s2p1">
+            <h1>About Me </h1>
+            <p>Hey! I'm a 20-year-old web dev who's all about building cool websites and cracking coding challenges.
+                Competitive programming is my jam, and I love teaming up with folks who share the same passion. Beyond
+                the code, you'll catch me exploring new places : I'm a travel nut. Oh, and can't forget my love for tea;
+                it's the secret sauce to my coding sessions and the perfect travel buddy. Let's geek out over tech,
+                share some laughs, and maybe even plan our next coding adventure over a cuppa!</p>
+
+        </div>
+    </div>
+    <div class="section3" id="who_am_i">
+        <h1>Who Am I?</h1>
+        <div class="s3">
+            <div class="s3p1">
+                <p>Hi, my name is Ayush Talan, and I go by the name Daru online. I am a second-year engineering student,
+                    and my favorite programming language is C++. I have a deep understanding of data structures and am
+                    currently grinding on LeetCode. I am following the famous Striver A2Z. Currently, I am learning
+                    React from MaxMullen. All I do is work and watch some tech web series. My favorite ones are Breaking
+                    Bad and Mr. Robot.</p><br>
+                <p>I also enjoy coding a lot and frequently tweet about it on Twitter, so please go and check my
+                    Twitter. I am also starting to blog now and will later update this website into a permanent blogging
+                    platform.</p><br>
+                <p>Additionally, I am currently using my laptop, which has an i7-12650H processor, 16 GB RAM, and an RTX
+                    3050 Ti. It's a piece of art!</p><br>
+
+            </div>
+            <div class="s3p2">
+                <img src="space.jpeg" alt="">
+            </div>
+
+        </div>
+
+    </div>
+    <div class="section4" id="contact_me">
+        <h1>Contact ME</h1>
+        <div class="s4">
+            <a href="mailto:iamayushtalan@gmail.com"><img src="email.png" alt=""></a>
+            <a href="https://www.linkedin.com/in/ayush-talan-62506a219/"><img src="linkedin.png" alt=""></a>
+            <a href="https://twitter.com/ayushtalan"><img src="twitter.png" alt=""></a>
+        </div>
+        <h3>Made By <span>DARU</span>❤️</h3>
+
+    </div>
+</body>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+<script>
+    var typed = new Typed('#element', {
+        strings: ['Portfolio', 'Manifesto', 'Brain'],
+        typeSpeed: 80,
+        loop: true,
+    });
+    document.addEventListener('DOMContentLoaded', function () {
+        const links = document.querySelectorAll('a[href^="#"]');
+        
+        links.forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    });
+    
+</script>
+
+</html>
